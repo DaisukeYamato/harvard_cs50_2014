@@ -1,0 +1,15 @@
+0.  An obscure term ostensibly referring to a lung disease caused by silica dust. Also, known as one of the longest words in the English language. 
+1.  getrusage(int who, struct rusage* usage) returns resource usage measures for who. 
+2.  16.
+3.  Because it takes more time for copying values if we use by values.
+4.  The most outer for loop is getting a character step by step. 
+In the loop, there are 3 blocks mainly. 
+   1. If the character is alphabet or index > 0 (during word), append the character to word and add index by 1. Then, another if statement appear to check the length exceed LENGTH or not. If so, we look for the next alphabetical character, and prepare for new word.
+   2. If not 1. case and the character is digit, then we ignore the word and prepare for the next word.
+   3. If not 1. & 2. and index > 0 (the character c is like "!", ".", " ", etc. and now word contains full characters), we append "\0" to word and update words counter by 1. Then, check the word and calculate resource usage. If misspelled, we print the word, and increment misspelings by 1.
+5.  If we use scanf("%s",...), we can not neglect words containing digits.
+6.  We do not overwrite those variables.
+7.  I use tried, which have one bool type and the 27 pointers to chain word. The 27 corresponds alphabets & "'"(26). We search a word using hash function to determine the corresponding pointers step by step. If the word found, the last pointer has is_word true.
+8.  This is the first time, so the current time is the answer. (TOTAL 0.13)
+9.  I would change hash function and data structure to avoid overhitting. It may be faster to use hash function looking to 2 characters. Mathematically, the combination is 27*27=729 (Of course, there are many unreal combination like '', so we have to think carefully).
+10. No. I think.

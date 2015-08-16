@@ -1,0 +1,21 @@
+0.  BMP: 1.844674e+19, GIF: 256, JPEG: 16777216 , PNG: 2.81475e+14
+1.  gif
+2.  The difference is whether the original data can be retrieved from compression data perfectly or not.
+3.  JPEG
+4. First, the system modifies the filename’s first character in the file’s directory entry to be recycled. 
+   Second, the system moves all of the file’s FAT clusters to the hard drive’s list of free clusters. 
+   So, the actual data is never touched. 
+5.  Overwriting by some data (null, or random generated characters).
+6.  stdint.h defines uint8_t, uint32_t, int32_t and uint16_6 used in bmp.h.
+7.  typedef makes you easy to write and view codes. ("unsigned char" is longer than "uint8_t".)
+8.  BYTE: 1 byte, DWORD: 4 bytes, LONG: 4 bytes, WORD: 2 bytes.
+9.  file type, like "windows bitmap".
+10. bfsize is the file size (246 bytes for smily.bmp), and bisize is the information size (40 for smily.bmp).
+11. The contents are ordered by top-down.
+12. biBitCount
+13. When infile does not exist.
+14. Because we catch the data as a block using struct type (BITMAPFILEHEADER, BITMAPINFOHEADER, and RGBTRIPLE).
+15. 3
+16. Move inptr by padding (if no padding, nothing to do).
+17. Current position in the file.
+18. Milo banana dun it.
